@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <section >
+        <div class="flex flex-col sm:flex sm:flex-row w-full py-2 px-10 justify-around">
+            <div class="flex flex-col  w-full lg:w-4/9 justify-around">
+                <h1 class="text-4xl md:text-[64px]  font-bold leading-none  mx-10">Secure Your Experience.</h1>
+                <p class="  mx-10">Our high-octane events require precision planning. Provide your details below to
+                    initiate the booking
+                    process with our premium concierge team.</p>
+
+                <div
+                    class="flex flex-col gap-2 shadow-xl outline-1 -outline-offset-1 outline-black/10 bg-white p-5 rounded-xl my-1 mx-10">
+                    <div class="flex  gap-5">
+                        <div class="flex justify-center items-center"><i
+                                class="fa-solid fa-calendar-days fa-2xl text-violet-500"></i></div>
+                        <div class="flex flex-col">
+                            <h6 class="text-lg font-bold">Priority Scheduling</h6>
+                            <p>Bookings are confirmed within 24 hours by an assigned
+                                event director.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="flex justify-center items-center"><i
+                                class="fa-regular fa-gem fa-2xl text-green-500"></i></div>
+                        <div class="flex flex-col">
+                            <h6 class="text-lg font-bold">Premium Tier</h6>
+                            <p>Access to exclusive venues and white-glove service is standard.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-1 mx-10">
+                    <img src="./img/party-booking.jpg" class="rounded-xl" width="100%" alt="">
+                </div>
+            </div>
+            <div class="shadow-xl outline-1 -outline-offset-1 outline-black/10 w-full lg:w-4/9 p-5 rounded-xl">
+                <form>
+                    <div class="space-y-5">
+                        <div class=" pb-5">
+
+                            <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                                <div class="sm:col-span-3">
+                                    <label for="first-name" class="block text-sm/6 font-medium text-black">First
+                                        name</label>
+                                    <div class="mt-2">
+                                        <input id="first-name" type="text" name="first-name" autocomplete="given-name"
+                                            placeholder="Enter your first name"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="last-name" class="block text-sm/6 font-medium text-black">Last
+                                        name</label>
+                                    <div class="mt-2">
+                                        <input id="last-name" type="text" name="last-name" autocomplete="family-name"
+                                            placeholder="Enter your last name"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="tel" class="block text-sm/6 font-medium text-black">Phone number</label>
+                                    <div class="mt-2">
+                                        <input id="tel" type="tel" name="tel" autocomplete="tel" maxlength="10"
+                                            placeholder="Enter your phone number"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-3 ">
+                                    <label for="email" class="block text-sm/6 font-medium text-black">Email
+                                        address</label>
+                                    <div class="mt-2">
+                                        <input id="email" type="email" name="email" autocomplete="email"
+                                            placeholder="Enter your email address"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="date" class="block text-sm/6 font-medium text-black">Event Date</label>
+                                    <div class="mt-2">
+                                        <input id="date" type="date" name="date" autocomplete="date"
+                                            placeholder="Select event date"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+
+                                <div class="sm:col-span-3">
+                                    <label for="evnet-type" class="block text-sm/6 font-medium text-black">Event
+                                        Type</label>
+                                    <div class="mt-2 grid grid-cols-1">
+                                        <select id="evnet-type" name="evnet-type" autocomplete="country-name" required
+                                            class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-black outline-1 -outline-offset-1 outline-black/30 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6">
+                                            <option disabled selected>Select Event</option>
+                                            <option>Birthday Party</option>
+                                            <option>Photography Session</option>
+                                            <option>Wedding</option>
+                                            <option>Corporate Event</option>
+                                            <option>Workshop/Seminar</option>
+                                        </select>
+                                        <svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                            class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4">
+                                            <path
+                                                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                                                clip-rule="evenodd" fill-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="guest-num" class="block text-sm/6 font-medium text-black">Estimated
+                                        Guests</label>
+                                    <div class="mt-2">
+                                        <input id="guest-num" type="number" name="guest-num" autocomplete="given-name"
+                                            placeholder="Enter estimated guests"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-3">
+                                    <label for="last-name" class="block text-sm/6 font-medium text-black">Desired
+                                        Location / City</label>
+                                    <div class="mt-2">
+                                        <input id="last-name" type="text" name="last-name" autocomplete="family-name"
+                                            placeholder="Enter desired location or city"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                    </div>
+                                </div>
+
+                                <div class="col-span-full">
+                                    <label for="about" class="block text-sm/6 font-medium text-black">Additional Notes
+                                        or Requirements</label>
+                                    <div class="mt-2">
+                                        <textarea id="about" name="about" rows="4"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                                            placeholder="Additional Notes or Requirements"></textarea>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-span-full text-center">
+                                    <button type="submit"
+                                        class="rounded-md w-full text-white bg-violet-500 px-3 py-2 text-sm font-semibold text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">SUBMIT
+                                        BOOKING <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                    <div class=" text-center">
+                                        <p>By submitting, you agree to our <a href="" class="text-violet-500"> Terms of
+                                                Service</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script>
+        zone.addEventListener("mousemove", (e) => {
+            const rect = zone.getBoundingClientRect();
+            const x = gsap.utils.mapRange(rect.left, rect.right, -rect.width / 2, rect.width / 2, e.clientX);
+            const y = gsap.utils.mapRange(rect.top, rect.bottom, -rect.height / 2, rect.height / 2, e.clientY);
+
+            gsap.to(btn, {
+                x: x * strength,
+                y: y * strength,
+                duration: 0.4,
+                ease: "power2.out",
+                overwrite: true
+            });
+        });
+
+        zone.addEventListener("mouseleave", () => {
+            gsap.to(btn, {
+                x: 0,
+                y: 0,
+                duration: 0.7,
+                ease: "elastic.out(1, 0.4)",
+                overwrite: true
+            });
+        });
+    </script>
+</body>
+
+</html>

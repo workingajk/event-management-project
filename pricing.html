@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <!-- CustomBounce requires CustomEase -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomBounce.min.js"></script>
+    <!-- CustomWiggle requires CustomEase -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
+    
+    <style>
+        .flair {
+            position: fixed;
+            opacity: 0;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="w-full">
+        <div class="text-center my-10">
+            <h1 class="font-bold text-4xl">Investment Tiers</h1>
+            <p>Tailored solutions for every scale of celebration.</p>
+        </div>
+        <div class="flex justify-around flex-col gap-y-8 mx-10 my-5 lg:mx-4 lg:flex-row  ">
+            <div
+                class="flex-1 mx-10 flex flex-col shadow-xl rounded-xl justify-center py-10 px-5 bg-white text-black gap-y-8 outline-1 outline-violet-300">
+                <div>
+                    <h2 class="text-3xl font-semibold">Essential</h2>
+                    <p class="font-thin">Perfect for small celebrations and private events.</p>
+                </div>
+
+                <p class="font-thin">
+                    <span class="text-3xl font-bold text-violet-500">$499</span> / event
+                </p>
+
+                <ul class="space-y-2">
+                    <li><i class="fa-solid fa-check"></i> Event planning consultation</li>
+                    <li><i class="fa-solid fa-check"></i> Venue selection assistance</li>
+                    <li><i class="fa-solid fa-check"></i> Basic event decoration</li>
+                    <li><i class="fa-solid fa-check"></i> Guest coordination</li>
+                </ul>
+
+                <button class="rounded-full outline-1 py-1 px-3 text-center bg-white text-violet-500 shadow-xl">
+                    Choose Plan
+                </button>
+            </div>
+
+            <div
+                class="flex-1 mx-10 flex flex-col shadow-xl rounded-xl justify-center py-10 px-5 bg-violet-500 text-white gap-y-10 relative">
+                <div
+                    class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-white text-violet-500 py-1 px-3 rounded-full outline-1 ">
+                    Most Popular</div>
+                <div>
+                    <h2 class="text-3xl font-semibold">Premium</h2>
+                    <p class="font-thin">Our most popular package for weddings and grand celebrations.</p>
+                </div>
+
+                <p class="font-thin">
+                    <span class="text-3xl font-bold">$999</span> / event
+                </p>
+
+                <ul class="space-y-2">
+                    <li><i class="fa-solid fa-check"></i> Everything in Essential</li>
+                    <li><i class="fa-solid fa-check"></i> Professional photography</li>
+                    <li><i class="fa-solid fa-check"></i> Vendor & catering management</li>
+                    <li><i class="fa-solid fa-check"></i> Entertainment coordination</li>
+                    <li><i class="fa-solid fa-check"></i> Dedicated event manager</li>
+                </ul>
+
+                <button class="rounded-full outline-1 py-1 px-3 text-center bg-white text-violet-500 shadow-xl ">
+                    Choose Plan
+                </button>
+            </div>
+
+            <div
+                class="flex-1 mx-10 flex flex-col shadow-xl rounded-xl justify-center py-10 px-5 bg-white text-black gap-y-8 outline-1 outline-violet-300">
+                <div>
+                    <h2 class="text-3xl font-semibold">Luxury</h2>
+                    <p class="font-thin">A complete premium experience for unforgettable events.</p>
+                </div>
+
+                <p class="font-thin">
+                    <span class="text-3xl font-bold text-violet-500">$1,999</span> / event
+                </p>
+
+                <ul class="space-y-2">
+                    <li><i class="fa-solid fa-check"></i> Everything in Premium</li>
+                    <li><i class="fa-solid fa-check"></i> Luxury venue arrangements</li>
+                    <li><i class="fa-solid fa-check"></i> Premium décor & floral design</li>
+                    <li><i class="fa-solid fa-check"></i> Live entertainment booking</li>
+                    <li><i class="fa-solid fa-check"></i> VIP guest management</li>
+                    <li><i class="fa-solid fa-check"></i> Full-day event coordination</li>
+                </ul>
+
+                <button class="rounded-full outline-1 py-1 px-3 text-center bg-white text-violet-500 shadow-xl">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="content w-full">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-1.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-2.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-3.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-4.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-5.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-6.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-7.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-8.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-1.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-2.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-3.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-4.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-5.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-6.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-7.png" alt="">
+        <img class="flair" src="https://assets.codepen.io/16327/Revised+Flair-8.png" alt="">
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(Draggable, DrawSVGPlugin, EaselPlugin, Flip, GSDevTools, InertiaPlugin, MotionPathHelper, MotionPathPlugin, MorphSVGPlugin, Observer, Physics2DPlugin, PhysicsPropsPlugin, PixiPlugin, ScrambleTextPlugin, ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText, TextPlugin, RoughEase, ExpoScaleEase, SlowMo, CustomEase, CustomBounce, CustomWiggle)
+            // gsap code here!
+            // the timeline
+            function playAnimation(shape) {
+                // the timeline
+                let tl = gsap.timeline();
+                tl.from(shape, {
+                    opacity: 0,
+                    scale: 0,
+                    ease: "elastic.out(1,0.3)",
+                })
+                    .to(shape, {
+                        rotation: "random([-360, 360])",
+                    }, "<")
+                    .to(shape, {
+                        y: "120vh",
+                        ease: "back.in(.4)",
+                        duration: 1,
+                    }, 0)
+
+            }
+            // interaction props
+            let gap = 100; // this number spaces the 'lil shapes out
+
+            /* --------------------------------
+            
+            The other stuff...
+            
+            ------------------------------------*/
+            let flair = gsap.utils.toArray(".flair");
+            let index = 0;
+            let wrapper = gsap.utils.wrap(0, flair.length);
+            gsap.defaults({ duration: 1 })
+
+            let mousePos = { x: 0, y: 0 };
+            let lastMousePos = mousePos;
+            let cachedMousePos = mousePos;
+
+            window.addEventListener("mousemove", (e) => {
+                mousePos = {
+                    x: e.x,
+                    y: e.y
+                };
+            });
+
+            gsap.ticker.add(ImageTrail);
+
+            function ImageTrail() {
+                let travelDistance = Math.hypot(
+                    lastMousePos.x - mousePos.x,
+                    lastMousePos.y - mousePos.y
+                );
+
+                // keep the previous mouse position for animation
+                cachedMousePos.x = gsap.utils.interpolate(
+                    cachedMousePos.x || mousePos.x,
+                    mousePos.x,
+                    0.1
+                );
+                cachedMousePos.y = gsap.utils.interpolate(
+                    cachedMousePos.y || mousePos.y,
+                    mousePos.y,
+                    0.1
+                );
+
+                if (travelDistance > gap) {
+                    animateImage();
+                    lastMousePos = mousePos;
+                }
+            }
+
+            function animateImage() {
+                let wrappedIndex = wrapper(index);
+
+                console.log(index, flair.length);
+
+                let img = flair[wrappedIndex];
+                gsap.killTweensOf(img);
+
+                gsap.set(img, {
+                    clearProps: "all",
+                });
+
+
+                gsap.set(img, {
+                    opacity: 1,
+                    left: mousePos.x,
+                    top: mousePos.y,
+                    xPercent: -50,
+                    yPercent: -50,
+                });
+
+                playAnimation(img);
+
+                index++;
+            }
+
+        });
+    </script>
+</body>
+
+</html>
