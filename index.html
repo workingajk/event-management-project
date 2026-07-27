@@ -2,227 +2,276 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EventManagement</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EventManagement</title>
 
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Jersey+10+Charted&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Playwrite+NZ+Guides&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&family=Yuyu+Short&display=swap"
-    rel="stylesheet">
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Jersey+10+Charted&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Playwrite+NZ+Guides&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&family=Yuyu+Short&display=swap"
+		rel="stylesheet">
 
-  <!-- font awesome  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- font awesome  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- favicon  -->
-  <link rel="shortcut icon"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAsIVClVVVzQpAcCX57uO5PY44YqaNjYTBDpNGf-D0RQ&s=10">
-
-
-  <!-- flowbite -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+	<!-- favicon  -->
+	<link rel="shortcut icon"
+		href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAsIVClVVVzQpAcCX57uO5PY44YqaNjYTBDpNGf-D0RQ&s=10">
 
 
-  <!-- tailwind  -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<!-- flowbite -->
+	<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
 
+	<!-- tailwind  -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<!-- gsap -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+	<!-- ScrollSmoother requires ScrollTrigger -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+	<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+	<!-- CustomBounce requires CustomEase -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomBounce.min.js"></script>
+	<!-- CustomWiggle requires CustomEase -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" href="./styles/index.css">
+
+	<!-- js -->
+	<script src="./js/index.js"></script>
 
 
 </head>
 
 <body>
 
-  <header style="background-color: aliceblue;">
+	<header style="background-color: aliceblue;">
 
 
-    <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default"
-      style="background-color: aliceblue;">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
-          <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Event Management</span>
-        </a>
-        <div class="flex items-center md:order-2">
-          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
-            class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
-            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-            </svg>
-            <span class="sr-only">Search</span>
-          </button>
-          <label for="input-group-1" class="sr-only">Your Email</label>
-          <div class="relative hidden md:block">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-              </svg>
-            </div>
-            <input type="text" id="input-group-1"
-              class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
-              placeholder="Search">
-          </div>
-          <button data-collapse-toggle="navbar-search" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-            aria-controls="navbar-search" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
-            </svg>
-          </button>
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-          <div class="relative mt-3 md:hidden">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-              </svg>
-            </div>
-            <input type="text" id="input-group-1"
-              class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
-              placeholder="Search">
-          </div>
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default"
+			style="background-color: aliceblue;">
+			<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+				<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+					<img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
+					<span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Event
+						Management</span>
+				</a>
+				<div class="flex items-center md:order-2">
+					<button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+						aria-expanded="false"
+						class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
+						<svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+							height="24" fill="none" viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+								d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+						</svg>
+						<span class="sr-only">Search</span>
+					</button>
+					<label for="input-group-1" class="sr-only">Your Email</label>
+					<div class="relative hidden md:block">
+						<div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+							<svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="24" height="24" fill="none" viewBox="0 0 24 24">
+								<path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+									d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+							</svg>
+						</div>
+						<input type="text" id="input-group-1"
+							class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
+							placeholder="Search">
+					</div>
+					<button data-collapse-toggle="navbar-search" type="button"
+						class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+						aria-controls="navbar-search" aria-expanded="false">
+						<span class="sr-only">Open main menu</span>
+						<svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+							height="24" fill="none" viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+								d="M5 7h14M5 12h14M5 17h14" />
+						</svg>
+					</button>
+				</div>
+				<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+					<div class="relative mt-3 md:hidden">
+						<div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+							<svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+								width="24" height="24" fill="none" viewBox="0 0 24 24">
+								<path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+									d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+							</svg>
+						</div>
+						<input type="text" id="input-group-1"
+							class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
+							placeholder="Search">
+					</div>
+					<ul
+						class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+						<li>
+							<a href="#"
+								class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
+						</li>
+						<li>
+							<a href="#"
+								class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+						</li>
+						<li>
+							<a href="#"
+								class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-  </header>
+	</header>
 
-  <!-- ----------------------------------------------------------- -->
- <!-- banner -->
-  <section>
-
-
-    <!-- <img class="h-auto max-w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOzgANs19yxh3B7_eVL3bYIy28M-A4lAzkO9VG0VpQQ&s=10" alt="image description"  style="width: 100%; height: 700px; object-fit: cover;"> -->
-
-
-    <div class="relative w-full">
-
-      <!-- Image -->
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOzgANs19yxh3B7_eVL3bYIy28M-A4lAzkO9VG0VpQQ&s=10"
-        alt="Banner" class="w-full h-[500px] object-cover">
-
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/40"></div>
-
-      <!-- Text -->
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-        <h1 class="text-5xl font-bold">Create Unforgettable Events</h1>
-        <p class="mt-4 text-lg">
-          We make your special moments memorable with perfect planning.
-        </p>
-
-        <button class="mt-6 bg-violet-500 hover:bg-violet-900 px-6 py-3 rounded-lg font-semibold">
-          Book Now
-        </button>
-      </div>
-
-    </div>
-  </section>
-<!-- --------------------------------------------- -->
- 
-<!-- About Section -->
-<section class="bg-[#380071] py-20">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <div class="flex flex-col lg:flex-row items-center gap-12">
-
-   <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl">
-  <img
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfNiIJWgV9V9K_-c9IEPK5oEKLAau3iJS5dk5r5vesw&s=10"
-    alt="Event Management"
-    class="w-full h-[350px] object-cover rounded-2xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-sky-500/40">
-</div>
+	<!-- ----------------------------------------------------------- -->
+	<!-- banner -->
+	<section>
 
 
-
-      
-
-      <div class="w-full lg:w-1/2 text-white">
-
-        <h2 class="text-4xl font-bold mb-3">
-          About Us
-        </h2>
-
-        <h3 class="text-2xl font-semibold text-sky-400 mb-5">
-          Creating Unforgettable Moments
-        </h3>
-
-        <p class="text-gray-300 leading-8 mb-8">
-          We specialize in planning and managing memorable events with
-          creativity, professionalism, and attention to every detail.
-          From weddings and birthdays to corporate events and private
-          celebrations, our team ensures every event is seamless and
-          unforgettable.
-        </p>
-
-       
-        <div class="grid grid-cols-2 gap-4 mb-8">
-
-          <div class="bg-[#7100E3] p-4 rounded-xl">
-            🎉 <span class="font-semibold">100+ Successful Events</span>
-          </div>
-
-          <div class="bg-[#7100E3] p-4 rounded-xl">
-            💍 <span class="font-semibold">Wedding Specialists</span>
-          </div>
-
-          <div class="bg-[#7100E3] p-4 rounded-xl">
-            📸 <span class="font-semibold">Professional Photography</span>
-          </div>
-
-          <div class="bg-[#7100E3] p-4 rounded-xl">
-            ⭐ <span class="font-semibold">5-Star Customer Satisfaction</span>
-          </div>
-
-        </div>
-
-       
-        <button
-          class="px-6 py-3 rounded-lg bg-violet-500 hover:bg-violet-900 transition duration-300 font-semibold">
-          Explore Services
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- --------------------------------------------------- -->
-
-  <!-- --------------------------------------------------- -->
+		<!-- <img class="h-auto max-w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOzgANs19yxh3B7_eVL3bYIy28M-A4lAzkO9VG0VpQQ&s=10" alt="image description"  style="width: 100%; height: 700px; object-fit: cover;"> -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+		<div class="relative w-full">
 
-  
+			<!-- Image -->
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOzgANs19yxh3B7_eVL3bYIy28M-A4lAzkO9VG0VpQQ&s=10"
+				alt="Banner" class="w-full h-[500px] object-cover">
+
+			<!-- Overlay -->
+			<div class="absolute inset-0 bg-black/40"></div>
+
+			<!-- Text -->
+			<div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+				<h1 class="text-5xl font-bold">Create Unforgettable Events</h1>
+				<p class="mt-4 text-lg">
+					We make your special moments memorable with perfect planning.
+				</p>
+
+				<button class="mt-6 bg-violet-500 hover:bg-violet-900 px-6 py-3 rounded-lg font-semibold">
+					Book Now
+				</button>
+			</div>
+
+		</div>
+	</section>
+	<!-- --------------------------------------------- -->
+
+	<!-- About Section -->
+	<section class="bg-[#380071] py-20">
+		<div class=" mx-auto px-20">
+
+			<div class="flex flex-col w-full  lg:flex-row items-center gap-12">
+
+				<div class="w-full h-60 sm:h-80 md:h-100 lg:h-100 lg:w-1/2 w-10  relative ">
+
+					<div
+						class="slider w-full transition-all duration-500  hover:shadow-2xl hover:shadow-sky-500/40 p-4 absolute top-15 -left-10 lg:-left-15">
+						<img class="item item-5 h-50 sm:h-70 md:h-90 lg:h-100 rounded-2xl" src="./img/abt-2.jpg"
+							alt="" />
+						<img class="item item-4 h-50 sm:h-70 md:h-90 lg:h-100 rounded-2xl" src="./img/abt-3.jpg"
+							alt="" />
+						<img class="item item-3 h-50 sm:h-70 md:h-90 lg:h-100 rounded-2xl" src="./img/abt-4.jpg"
+							alt="" />
+						<img class="item item-2 h-50 sm:h-70 md:h-90 lg:h-100 rounded-2xl" src="./img/abt-5.jpg"
+							alt="" />
+						<img class="item item-1 h-50 sm:h-70 md:h-90 lg:h-100 rounded-2xl" src="./img/abt-6.jpg"
+							alt="" />
+					</div>
+
+				</div>
+
+
+
+
+
+				<div class="w-full lg:w-1/2 text-white ps-3">
+
+					<h2 class="text-4xl font-bold mb-3">
+						About Us
+					</h2>
+
+					<h3 class="text-2xl font-semibold text-sky-400 mb-5">
+						Creating Unforgettable Moments
+					</h3>
+
+					<p class="text-gray-300 leading-8 mb-8">
+						We specialize in planning and managing memorable events with
+						creativity, professionalism, and attention to every detail.
+						From weddings and birthdays to corporate events and private
+						celebrations, our team ensures every event is seamless and
+						unforgettable.
+					</p>
+
+
+					<div class="grid grid-cols-2 gap-4 mb-8">
+
+						<div class="bg-[#7100E3] p-4 rounded-xl">
+							🎉 <span class="font-semibold">100+ Successful Events</span>
+						</div>
+
+						<div class="bg-[#7100E3] p-4 rounded-xl">
+							💍 <span class="font-semibold">Wedding Specialists</span>
+						</div>
+
+						<div class="bg-[#7100E3] p-4 rounded-xl">
+							📸 <span class="font-semibold">Professional Photography</span>
+						</div>
+
+						<div class="bg-[#7100E3] p-4 rounded-xl">
+							⭐ <span class="font-semibold">5-Star Customer Satisfaction</span>
+						</div>
+
+					</div>
+
+
+					<button
+						class="px-6 py-3 rounded-lg bg-violet-500 hover:bg-violet-900 transition duration-300 font-semibold">
+						Explore Services
+					</button>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- --------------------------------------------------- -->
+
+	<!-- --------------------------------------------------- -->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+
 </body>
 
 </html>
