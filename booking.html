@@ -27,8 +27,8 @@
 
 <body>
     
-    <section >
-        <div class="flex flex-col sm:flex sm:flex-row w-full py-2 px-10 justify-around">
+    <section class="dark:bg-black">
+        <div class="flex flex-col sm:flex sm:flex-row w-full py-2 px-10 justify-around dark:text-white gap-y-8">
             <div class="flex flex-col  w-full lg:w-4/9 justify-around">
                 <h1 class="text-4xl md:text-[64px]  font-bold leading-none  mx-10">Secure Your Experience.</h1>
                 <p class="  mx-10">Our high-octane events require precision planning. Provide your details below to
@@ -36,7 +36,7 @@
                     process with our premium concierge team.</p>
 
                 <div
-                    class="flex flex-col gap-2 shadow-xl outline-1 -outline-offset-1 outline-black/10 bg-white p-5 rounded-xl my-1 mx-10">
+                    class="flex flex-col gap-2 shadow-xl outline-1 -outline-offset-1 outline-black/10 bg-white dark:bg-gray-700 p-5 rounded-xl my-1 mx-10">
                     <div class="flex  gap-5">
                         <div class="flex justify-center items-center"><i
                                 class="fa-solid fa-calendar-days fa-2xl text-violet-500"></i></div>
@@ -59,66 +59,67 @@
                     <img src="./img/party-booking.jpg" class="rounded-xl" width="100%" alt="">
                 </div>
             </div>
-            <div class="shadow-xl outline-1 -outline-offset-1 outline-black/10 w-full lg:w-4/9 p-5 rounded-xl">
+
+            <div class="shadow-xl outline-1 -outline-offset-1 outline-black/10 w-full lg:w-4/9 p-5 rounded-xl dark:bg-gray-700">
                 <form>
                     <div class="space-y-5">
-                        <div class=" pb-5">
+                        <div class=" pb-5 text-black dark:text-white ">
 
                             <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                                 <div class="sm:col-span-3">
-                                    <label for="first-name" class="block text-sm/6 font-medium text-black">First
+                                    <label for="first-name" class="block text-sm/6 font-medium ">First
                                         name</label>
                                     <div class="mt-2">
                                         <input id="first-name" type="text" name="first-name" autocomplete="given-name"
                                             placeholder="Enter your first name"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50  focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
                                 <div class="sm:col-span-3">
-                                    <label for="last-name" class="block text-sm/6 font-medium text-black">Last
+                                    <label for="last-name" class="block text-sm/6 font-medium ">Last
                                         name</label>
                                     <div class="mt-2">
                                         <input id="last-name" type="text" name="last-name" autocomplete="family-name"
                                             placeholder="Enter your last name"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
                                 <div class="sm:col-span-3">
-                                    <label for="tel" class="block text-sm/6 font-medium text-black">Phone number</label>
+                                    <label for="tel" class="block text-sm/6 font-medium ">Phone number</label>
                                     <div class="mt-2">
                                         <input id="tel" type="tel" name="tel" autocomplete="tel" maxlength="10"
                                             placeholder="Enter your phone number"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
                                 <div class="sm:col-span-3 ">
-                                    <label for="email" class="block text-sm/6 font-medium text-black">Email
+                                    <label for="email" class="block text-sm/6 font-medium ">Email
                                         address</label>
                                     <div class="mt-2">
                                         <input id="email" type="email" name="email" autocomplete="email"
                                             placeholder="Enter your email address"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
                                 <div class="sm:col-span-3">
-                                    <label for="date" class="block text-sm/6 font-medium text-black">Event Date</label>
+                                    <label for="date" class="block text-sm/6 font-medium ">Event Date</label>
                                     <div class="mt-2">
                                         <input id="date" type="date" name="date" autocomplete="date"
                                             placeholder="Select event date"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base dark:[color-scheme:dark] outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
 
                                 <div class="sm:col-span-3">
-                                    <label for="evnet-type" class="block text-sm/6 font-medium text-black">Event
+                                    <label for="evnet-type" class="block text-sm/6 font-medium ">Event
                                         Type</label>
                                     <div class="mt-2 grid grid-cols-1">
                                         <select id="evnet-type" name="evnet-type" autocomplete="country-name" required
-                                            class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-black outline-1 -outline-offset-1 outline-black/30 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6">
+                                            class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base  outline-1 -outline-offset-1 outline-black/30 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6">
                                             <option disabled selected>Select Event</option>
                                             <option>Birthday Party</option>
                                             <option>Photography Session</option>
@@ -136,31 +137,31 @@
                                 </div>
 
                                 <div class="sm:col-span-3">
-                                    <label for="guest-num" class="block text-sm/6 font-medium text-black">Estimated
+                                    <label for="guest-num" class="block text-sm/6 font-medium ">Estimated
                                         Guests</label>
                                     <div class="mt-2">
                                         <input id="guest-num" type="number" name="guest-num" autocomplete="given-name"
                                             placeholder="Enter estimated guests"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
                                 <div class="sm:col-span-3">
-                                    <label for="last-name" class="block text-sm/6 font-medium text-black">Desired
+                                    <label for="last-name" class="block text-sm/6 font-medium ">Desired
                                         Location / City</label>
                                     <div class="mt-2">
                                         <input id="last-name" type="text" name="last-name" autocomplete="family-name"
                                             placeholder="Enter desired location or city"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                                     </div>
                                 </div>
 
                                 <div class="col-span-full">
-                                    <label for="about" class="block text-sm/6 font-medium text-black">Additional Notes
+                                    <label for="about" class="block text-sm/6 font-medium ">Additional Notes
                                         or Requirements</label>
                                     <div class="mt-2">
                                         <textarea id="about" name="about" rows="4"
-                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                                            class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base  outline-1 -outline-offset-1 outline-black/30 placeholder:text-gray-500 dark:placeholder-gray-50 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
                                             placeholder="Additional Notes or Requirements"></textarea>
 
                                     </div>
@@ -168,7 +169,7 @@
 
                                 <div class="col-span-full text-center">
                                     <button type="submit"
-                                        class="rounded-md w-full text-white bg-violet-500 px-3 py-2 text-sm font-semibold text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">SUBMIT
+                                        class="rounded-md w-full text-white bg-violet-500 px-3 py-2 text-sm font-semibold  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">SUBMIT
                                         BOOKING <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                     <div class=" text-center">
