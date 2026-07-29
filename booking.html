@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./js/index.js"></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+    </style>
 
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
@@ -20,16 +24,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <!-- CustomBounce requires CustomEase -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomBounce.min.js"></script>
+    <!-- CustomWiggle requires CustomEase -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
+
 
 </head>
 
 <body>
-    
+    <header class="bg-gray-100 sticky top-0 z-20">
+
+        <nav class="sticky w-full  top-0 border-b dark:border-gray-300 bg-white dark:bg-black shadow-sm">
+            <div class="max-w-screen-xl flex items-center mx-auto p-4">
+
+                <!-- Logo image change aakanam-->
+                <a href="#" class="flex items-center space-x-3">
+                    <span class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg text-xl font-black ">LE</span>
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-700 dark:text-gray-200">
+                        Lumina Events
+                    </span>
+                </a>
+
+                <!-- Navbar -->
+                <div class="hidden md:flex items-center ml-auto" id="navbar-search">
+
+                    <ul class="flex items-center gap-6 font-medium">
+
+                        <li>
+                            <a href="./index.html" class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+                                Home
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="./booking.html" class="text-violet-500 transition">
+                                Booking
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href=""
+                                class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="hidden md:flex items-center ml-10">
+
+                    <!-- Search -->
+                    <div class="flex items-center">
+
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        d="M21 21l-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+
+                            <input type="text" id="searchInput"
+                                class="w-52 pl-10 pr-3 py-2 border border-gray-300 dark:border-none dark:bg-white rounded-l-lg  focus:outline-none"
+                                type="search" placeholder="Search">
+                        </div>
+
+                        <button id="searchBtn"
+                            class="px-4 py-2 bg-violet-500 text-white rounded-r-lg hover:bg-violet-600 transition">
+                            Search
+                        </button>
+
+                    </div>
+
+
+                    <a href="login.html"
+                        class="ml-6 px-5 py-2 text-white bg-violet-500 rounded-lg hover:bg-violet-600 transition">
+                        Login
+                    </a>
+
+
+                    <a href="signup.html"
+                        class="ml-3 px-5 py-2 text-white bg-violet-500 rounded-lg hover:bg-violet-600 transition">
+                        Sign Up
+                    </a>
+
+                    <a id="theme-toggle"
+                        class="ml-3 px-2 py-2 text-white bg-violet-500 hover:dark:bg-white rounded-full hover:bg-violet-600 transition">🌙</a>
+
+                </div>
+
+
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 ml-auto w-10 h-10 justify-center text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" d="M5 7h14M5 12h14M5 17h14" />
+                    </svg>
+
+                </button>
+
+            </div>
+        </nav>
+
+    </header>
+
+
     <section class="dark:bg-black">
         <div class="flex flex-col sm:flex sm:flex-row w-full py-2 px-10 justify-around dark:text-white gap-y-8">
-            <div class="flex flex-col  w-full lg:w-4/9 justify-around">
+            <div class="flex flex-col  w-full lg:w-4/9 justify-around fade-up ">
                 <h1 class="text-4xl md:text-[64px]  font-bold leading-none  mx-10">Secure Your Experience.</h1>
                 <p class="  mx-10">Our high-octane events require precision planning. Provide your details below to
                     initiate the booking
@@ -60,7 +197,8 @@
                 </div>
             </div>
 
-            <div class="shadow-xl outline-1 -outline-offset-1 outline-black/10 w-full lg:w-4/9 p-5 rounded-xl dark:bg-gray-700">
+            <div
+                class="shadow-xl outline-1  fade-up  -outline-offset-1 outline-black/10 w-full lg:w-4/9 p-5 rounded-xl dark:bg-gray-700">
                 <form>
                     <div class="space-y-5">
                         <div class=" pb-5 text-black dark:text-white ">
@@ -169,7 +307,7 @@
 
                                 <div class="col-span-full text-center">
                                     <button type="submit"
-                                        class="rounded-md w-full text-white bg-violet-500 px-3 py-2 text-sm font-semibold  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">SUBMIT
+                                        class="rounded-md w-full text-white bg-violet-500 px-3 py-2 text-sm font-semibold  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 ">SUBMIT
                                         BOOKING <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                     <div class=" text-center">
@@ -186,32 +324,39 @@
             </div>
         </div>
     </section>
+    <!-- flair section -->
+    <div class="content w-full">
+        <img class="flair" src="./img/flair/martini-glass-citrus-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/gift-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/champagne-glasses-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/martini-glass-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/cube-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/drum-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/martini-glass-citrus-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/gift-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/champagne-glasses-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/martini-glass-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/cube-solid-full.svg" alt="">
+        <img class="flair" src="./img/flair/drum-solid-full.svg" alt="">
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script> -->
     <script>
-        zone.addEventListener("mousemove", (e) => {
-            const rect = zone.getBoundingClientRect();
-            const x = gsap.utils.mapRange(rect.left, rect.right, -rect.width / 2, rect.width / 2, e.clientX);
-            const y = gsap.utils.mapRange(rect.top, rect.bottom, -rect.height / 2, rect.height / 2, e.clientY);
+        const theme_toggle = document.getElementById("theme-toggle");
+        if (theme_toggle) {
+            console.log("toogle ok")
+            theme_toggle.addEventListener("click", () => {
+                document.documentElement.classList.toggle("dark")
+            })
 
-            gsap.to(btn, {
-                x: x * strength,
-                y: y * strength,
-                duration: 0.4,
-                ease: "power2.out",
-                overwrite: true
-            });
-        });
-
-        zone.addEventListener("mouseleave", () => {
-            gsap.to(btn, {
-                x: 0,
-                y: 0,
-                duration: 0.7,
-                ease: "elastic.out(1, 0.4)",
-                overwrite: true
-            });
-        });
+        } else {
+            console.log("no toggle")
+        }
     </script>
 </body>
 

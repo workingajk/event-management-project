@@ -160,7 +160,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
             // x:0,
             delay: 0.5,
             stagger: 0.3,
-            ease: "sine.out"
+            ease: "sine.out",
+            scrollTrigger: {
+                trigger: ".fade-up",
+                start: "top 60%",
+                toggleActions: "play none none reset"
+            }
         }
     );
 
