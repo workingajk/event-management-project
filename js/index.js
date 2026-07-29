@@ -146,6 +146,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
         index++;
     }
 
+    // fade-up stagger animation with gsap 
+    gsap.fromTo(".fade-up",
+        {
+            opacity: 0,
+            y: 70,
+            // x: 70
+        },
+        {
+            duration: 1,
+            opacity: 1,
+            y: 0,
+            // x:0,
+            delay: 0.5,
+            stagger: 0.3,
+            ease: "sine.out"
+        }
+    );
+
     // other stuff to be added
 
 });
