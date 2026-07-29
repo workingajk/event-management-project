@@ -169,6 +169,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     );
 
+    // Counter stuff
+    document.querySelectorAll(".counter").forEach(counter => {
+
+    const obj = { value: 0 };
+
+    gsap.to(obj, {
+        value: counter.dataset.target,
+        duration: 2,
+        ease: "elastic.out",
+
+        scrollTrigger: {
+            trigger: counter,
+            start: "top 80%",
+            once: true
+        },
+
+        onUpdate() {
+            counter.textContent = Math.floor(obj.value).toLocaleString();
+        }
+    });
+
+});
+
     // other stuff to be added
 
 });
