@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+
+<div class="bg-white rounded-xl shadow-xl px-8">
+<form>
+
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+  <h1 class="text-center text-5xl font-bold text-violet-500 mb-8">create account</h1>
+  <h3 class="text-center text-violet-400 font-bold">create your account</h3>
+
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md bg-white rounded-xl shadow-xl p-8">
+    <form action="#" method="POST" class="space-y-6">
+
+
+ <div>
+        <label for="username" class="block text-sm/6 font-medium text-grey-900">username</label>
+        <div class="mt-4">
+          <input id="username" type="text" name="username" required autocomplete="name" class="block w-full rounded-xl bg-violet-300 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+        </div>
+
+      <div>
+        <label for="email" class="block text-sm/6 font-medium text-grey-900">Email address</label>
+        <div class="mt-5">
+          <input id="email" type="email" name="email" required autocomplete="email" class="block w-full rounded-xl bg-violet-300 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between">
+          <label for="password" class="block text-sm/6 font-medium text-gray-900 ">Password</label>
+        </div>
+        <div class="mt-4">
+          <input id="password" type="password" name="password" required autocomplete="current-password" class="block w-full rounded-xl bg-violet-300 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+        </div>
+      </div>
+
+    <div>
+        <div class="flex items-center justify-between">
+          <label for="password" class="block text-sm/6 font-medium text-gray-900 "> confirm Password</label>
+        </div>
+        <div class="mt-4">
+          <input id="password" type="password" name="password" required autocomplete="current-password" class="block w-full rounded-xl bg-violet-300 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+        </div>
+      </div>
+      <div class="mt-8">
+        <button type="submit" class="flex w-full justify-center rounded-xl bg-indigo-500 px-3 py-1.5 text-sm/6 font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">register</button>
+      </div>
+      <p class="text-center mt-7 text-sm text-violet-600">already have an account?
+      <a href="#" class="text-center text-blue-600 hover:underline">login here</a>
+     </p>
+    </form>
+  </div>
+</div>
+</form>
+</div>
+
+    
+</body>
+</html>
