@@ -41,3 +41,10 @@
     left: 80px;
     top: -80px;
 }
+
+/* flair stuff */
+.flair {
+    position: fixed;
+    opacity: 0;
+    width: 50px;
+}
