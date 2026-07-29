@@ -1,68 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- flowbite -->
+	<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Jersey+10+Charted&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Playwrite+NZ+Guides&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&family=Yuyu+Short&display=swap"
+		rel="stylesheet">
+
+	<style type="text/tailwindcss">
+		@custom-variant dark (&:where(.dark, .dark *));
+    </style>
+
+	<link rel="stylesheet" href="./styles/index.css">
+	<script src="./js/index.js"></script>
+
+	<!-- gsap -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Draggable.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EaselPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/GSDevTools.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/InertiaPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathHelper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MotionPathPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/MorphSVGPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Observer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Physics2DPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PhysicsPropsPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/PixiPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+	<!-- ScrollSmoother requires ScrollTrigger -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+	<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/EasePack.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+	<!-- CustomBounce requires CustomEase -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomBounce.min.js"></script>
+	<!-- CustomWiggle requires CustomEase -->
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
+
 </head>
+
 <body>
+	<header class="bg-gray-100 sticky top-0 z-20">
+
+		<nav class="sticky w-full  top-0 border-b dark:border-gray-300 bg-white dark:bg-black shadow-sm">
+			<div class="max-w-screen-xl flex items-center mx-auto p-4">
+
+				<!-- Logo image change aakanam-->
+				<a href="#" class="flex items-center space-x-3">
+					<span
+						class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg text-xl font-black ">LE</span>
+					<span class="self-center text-xl font-semibold whitespace-nowrap text-gray-700 dark:text-gray-200">
+						Lumina Events
+					</span>
+				</a>
+
+				<!-- Navbar -->
+				<div class="hidden md:flex items-center mx-auto" id="navbar-search">
+
+					<ul class="flex items-center gap-6 font-medium">
+
+						<li>
+							<a href="./index.html"
+								class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+								Home
+							</a>
+						</li>
 
 
-<div class="bg-white dark:bg-gray-950 rounded-xl shadow-xl px-8">
+						<li>
+							<a href="./booking.html"
+								class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+								Booking
+							</a>
+						</li>
+
+						<li>
+							<a href="" class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+								Contact
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
 
 
-<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-white dark:bg-gray-950">
-  <h1 class="text-center text-5xl font-bold text-violet-500 mb-8">create account</h1>
-  <h3 class="text-center text-violet-400 font-bold">create your account</h3>
+				<div class="hidden md:flex items-center ml-10">
 
-  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-xl p-8">
-    <form action="#" method="POST" class="space-y-6">
+					<!-- Search -->
+					<!-- <div class="flex items-center">
+
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round"
+                                        d="M21 21l-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+
+                            <input type="text" id="searchInput"
+                                class="w-52 pl-10 pr-3 py-2 border border-gray-300 dark:border-none dark:bg-white rounded-l-lg  focus:outline-none"
+                                type="search" placeholder="Search">
+                        </div>
+
+                        <button id="searchBtn"
+                            class="px-4 py-2 bg-violet-500 text-white rounded-r-lg hover:bg-violet-600 transition">
+                            Search
+                        </button>
+
+                    </div> -->
 
 
- <div>
-        <label for="username" class="block text-sm/6 font-medium text-gray-900 dark:text-white">username</label>
-        <div class="mt-4">
-          <input id="username" type="text" name="username" required autocomplete="username" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-        </div>
+					<a href="login.html"
+						class="ml-6 px-5 py-2 text-white bg-violet-500 rounded-lg hover:bg-violet-600 transition">
+						Login
+					</a>
 
-      <div>
-        <label for="email" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Email address</label>
-        <div class="mt-5">
-          <input id="email" type="email" name="email" required autocomplete="email" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-        </div>
-      </div>
 
-      <div>
-        <div class="flex items-center justify-between">
-          <label for="password" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Password</label>
-        </div>
-        <div class="mt-4">
-          <input id="password" type="password" name="password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-        </div>
-      </div>
+					<a href="signup.html"
+						class="ml-3 px-5 py-2 text-white bg-violet-500 rounded-lg hover:bg-violet-600 transition">
+						Sign Up
+					</a>
 
-    <div>
-        <div class="flex items-center justify-between">
-          <label for="confirm-password" class="block text-sm/6 font-medium text-gray-900 dark:text-white"> confirm Password</label>
-        </div>
-        <div class="mt-4">
-          <input id="confirm-password" type="password" name="confirm-password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-        </div>
-      </div>
-      <div class="mt-8">
-        <button type="submit" class="flex w-full justify-center rounded-xl bg-violet-500 dark:bg-violet-950 px-3 py-1.5 text-sm/6 font-semibold text-gray-900 dark:text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">register</button>
-      </div>
-      <p class="text-center mt-7 text-sm text-violet-600 dark:text-violet-300">already have an account?
-      <a href="login.html" class="text-center text-violet-600 dark:text-violet-400 hover:underline">login here</a>
-     </p>
-    </form>
-  </div>
-</div>
+					<a id="theme-toggle"
+						class="ml-3 px-2 py-2 text-white bg-violet-500 hover:dark:bg-white rounded-full hover:bg-black transition">🌙</a>
 
-</div>
-    
+				</div>
 
+
+				<button data-collapse-toggle="navbar-search" type="button"
+					class="inline-flex items-center p-2 ml-auto w-10 h-10 justify-center text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
+
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+						<path stroke-linecap="round" d="M5 7h14M5 12h14M5 17h14" />
+					</svg>
+
+				</button>
+
+			</div>
+		</nav>
+
+	</header>
+
+
+	<div class="bg-white dark:bg-gray-950 px-8">
+
+
+		<div class="flex min-h-full flex-col justify-center px-6 py-10 lg:px-8 bg-white dark:bg-gray-950">
+			<h1 class="text-center text-5xl font-bold text-violet-500 ">Create Your Account</h1>
+
+			<div
+				class="mt-10 sm:mx-auto sm:w-full sm:max-w-md bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-xl p-8">
+				<form action="#" method="POST" class="space-y-6">
+
+
+					<div>
+						<label for="username"
+							class="block text-sm/6 font-medium text-gray-900 dark:text-white">username</label>
+						<div class="mt-4">
+							<input id="username" type="text" name="username" required autocomplete="username"
+								class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+						</div>
+
+						<div>
+							<label for="email" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Email
+								address</label>
+							<div class="mt-5">
+								<input id="email" type="email" name="email" required autocomplete="email"
+									class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+							</div>
+						</div>
+
+						<div>
+							<div class="flex items-center justify-between">
+								<label for="password"
+									class="block text-sm/6 font-medium text-gray-900 dark:text-white">Password</label>
+							</div>
+							<div class="mt-4">
+								<input id="password" type="password" name="password" required
+									autocomplete="new-password"
+									class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+							</div>
+						</div>
+
+						<div>
+							<div class="flex items-center justify-between">
+								<label for="confirm-password"
+									class="block text-sm/6 font-medium text-gray-900 dark:text-white"> confirm
+									Password</label>
+							</div>
+							<div class="mt-4">
+								<input id="confirm-password" type="password" name="confirm-password" required
+									autocomplete="new-password"
+									class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+							</div>
+						</div>
+						<div class="mt-8">
+							<button type="submit"
+								class="flex w-full justify-center rounded-xl bg-violet-500 dark:bg-violet-950 px-3 py-1.5 text-sm/6 font-semibold text-gray-900 dark:text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">register</button>
+						</div>
+						<p class="text-center mt-7 text-sm text-violet-600 dark:text-violet-300">already have an
+							account?
+							<a href="login.html"
+								class="text-center text-violet-600 dark:text-violet-400 hover:underline">login
+								here</a>
+						</p>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- flair section -->
+	<div class="content w-full">
+		<img class="flair" src="./img/flair/martini-glass-citrus-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/gift-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/champagne-glasses-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/martini-glass-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/cube-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/drum-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/martini-glass-citrus-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/gift-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/champagne-glasses-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/martini-glass-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/burst-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/cube-solid-full.svg" alt="">
+		<img class="flair" src="./img/flair/drum-solid-full.svg" alt="">
+
+	</div>
+
+	<script>
+		const theme_toggle = document.getElementById("theme-toggle");
+		theme_toggle.addEventListener("click", () => {
+			document.documentElement.classList.toggle("dark")
+		})
+	</script>
 
 </body>
+
 </html>

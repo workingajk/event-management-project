@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             ease: "sine.out",
             scrollTrigger: {
                 trigger: ".fade-up",
-                start: "top 60%",
+                start: "top 80%",
                 toggleActions: "play none none reset"
             }
         }

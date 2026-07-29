@@ -13,19 +13,23 @@
 
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- font-awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!-- gfont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
+
+    <!-- flowbite -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" /> -->
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
@@ -69,19 +73,21 @@
 
                 <!-- Logo image change aakanam-->
                 <a href="#" class="flex items-center space-x-3">
-                    <span class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg text-xl font-black ">LE</span>
+                    <span
+                        class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg text-xl font-black ">LE</span>
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-700 dark:text-gray-200">
                         Lumina Events
                     </span>
                 </a>
 
                 <!-- Navbar -->
-                <div class="hidden md:flex items-center ml-auto" id="navbar-search">
+                <div class="hidden md:flex items-center mx-auto" id="navbar-search">
 
                     <ul class="flex items-center gap-6 font-medium">
 
                         <li>
-                            <a href="./index.html" class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+                            <a href="./index.html"
+                                class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
                                 Home
                             </a>
                         </li>
@@ -94,8 +100,7 @@
                         </li>
 
                         <li>
-                            <a href=""
-                                class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+                            <a href="" class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
                                 Contact
                             </a>
                         </li>
@@ -108,7 +113,7 @@
                 <div class="hidden md:flex items-center ml-10">
 
                     <!-- Search -->
-                    <div class="flex items-center">
+                    <!-- <div class="flex items-center">
 
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -129,7 +134,7 @@
                             Search
                         </button>
 
-                    </div>
+                    </div> -->
 
 
                     <a href="login.html"
@@ -144,7 +149,7 @@
                     </a>
 
                     <a id="theme-toggle"
-                        class="ml-3 px-2 py-2 text-white bg-violet-500 hover:dark:bg-white rounded-full hover:bg-violet-600 transition">🌙</a>
+                        class="ml-3 px-2 py-2 text-white bg-violet-500 hover:dark:bg-white rounded-full hover:bg-black transition">🌙</a>
 
                 </div>
 
@@ -345,18 +350,15 @@
 
     </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
     <script>
         const theme_toggle = document.getElementById("theme-toggle");
-        if (theme_toggle) {
-            console.log("toogle ok")
-            theme_toggle.addEventListener("click", () => {
-                document.documentElement.classList.toggle("dark")
-            })
-
-        } else {
-            console.log("no toggle")
-        }
+        theme_toggle.addEventListener("click", () => {
+            document.documentElement.classList.toggle("dark")
+        })
     </script>
 </body>
 
