@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Jersey+10+Charted&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montenegrin+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Playwrite+NZ+Guides&family=Playwrite+NZ:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&family=Yuyu+Short&display=swap"
+		rel="stylesheet">
+
     <!-- js -->
     <script src="./js/contact.js" defer></script>
 
@@ -20,7 +27,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- gsap -->
@@ -60,7 +69,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
 
     <style type="text/tailwindcss">
-		@custom-variant dark (&:where(.dark, .dark *));
+        @custom-variant dark (&:where(.dark, .dark *));
   	</style>
 
 
@@ -95,14 +104,14 @@
 
 
                         <li>
-                            <a href="./booking.html" class="text-violet-500 transition">
+                            <a href="./booking.html" class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
                                 Booking
                             </a>
                         </li>
 
                         <li>
                             <a href="./contact.html"
-                                class="text-gray-700 dark:text-gray-200 hover:text-violet-500 transition">
+                                class="text-violet-500 transition">
                                 Contact
                             </a>
                         </li>
@@ -275,11 +284,11 @@
         </div>
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
-        <!-- Left Side -->
-        <div class="">
+            <!-- Left Side -->
+            <div class="">
 
-            <!-- Logo -->
-            <!-- <a href="#" class="flex items-center space-x-3 py-2">
+                <!-- Logo -->
+                <!-- <a href="#" class="flex items-center space-x-3 py-2">
 					<span
 						class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg  font-black ">LE</span>
 					<span class="self-center  font-semibold whitespace-nowrap text-gray-700 dark:text-gray-200">
@@ -287,128 +296,132 @@
 					</span>
 				</a> -->
 
-            <!-- Heading -->
-            <h2 class="text-3xl font-bold mt-3 uppercase leading-tight mb-16">
-                Want To Work With Us?
-            </h2>
+                <!-- Heading -->
+                <h2 class="text-3xl font-bold mt-3 text-black dark:text-white uppercase leading-tight mb-16">
+                    Want To Work With Us?
+                </h2>
 
-            <!-- Phone -->
-            <div class="flex items-start gap-6 mb-12">
-                <div  class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 text-3xl">
-                   <i class="fa-solid fa-phone fa-sm" style="color: rgb(131, 100, 226);"></i>
+                <!-- Phone -->
+                <div class="flex items-start gap-6 mb-12">
+                    <div
+                        class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 text-3xl">
+                        <i class="fa-solid fa-phone fa-sm" style="color: rgb(131, 100, 226);"></i>
+                    </div>
+
+                    <div>
+                        <p class="text-gray-600 dark:text-white uppercase tracking-wide text-xl">
+                            Talk To Our Client Support Team
+                        </p>
+
+                        <h3 class="text-2xl text-black dark:text-white font-bold mt-2">
+                            +91-859-001-0011
+                        </h3>
+                    </div>
                 </div>
 
-                <div>
-                    <p class="text-gray-600 uppercase tracking-wide text-xl">
-                        Talk To Our Client Support Team
-                    </p>
+                <!-- Email -->
+                <div class="flex items-start gap-6 mb-14">
+                    <div
+                        class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 text-3xl">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
 
-                    <h3 class="text-2xl font-bold mt-2">
-                        +91-859-001-0011
-                    </h3>
+                    <div>
+                        <p class="text-gray-600 dark:text-white uppercase tracking-wide text-xl">
+                            Write To Us About Your Needs
+                        </p>
+
+                        <h3 class="text-2xl text-black dark:text-white font-bold mt-2 break-all">
+                            melodiaeventmanagement@gmail.com
+                        </h3>
+                    </div>
                 </div>
+
+                <!-- Social Icons -->
+                <div class="flex gap-5">
+
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-blue-700 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-sky-700 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Email -->
-            <div class="flex items-start gap-6 mb-14">
-                <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 text-3xl">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
+            <!-- Right Side -->
+            <div
+                class="contact-form shadow-xl outline-1  fade-up  -outline-offset-1 outline-black/10   p-5 rounded-xl bg-white dark:bg-gray-700">
 
-                <div>
-                    <p class="text-gray-600 uppercase tracking-wide text-xl">
-                        Write To Us About Your Needs
-                    </p>
+                <form class="space-y-7">
 
-                    <h3 class="text-2xl font-bold mt-2 break-all">
-                        melodiaeventmanagement@gmail.com
-                    </h3>
-                </div>
-            </div>
+                    <input type="text" placeholder="Enter your Full Name"
+                        class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
 
-            <!-- Social Icons -->
-            <div class="flex gap-5">
+                    <input type="tel" placeholder="Enter your Phone Number"
+                        class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
 
-                <a href="#" class="w-14 h-14 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+                    <input type="email" placeholder="Enter your Email ID"
+                        class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
 
-                <a href="#" class="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+                    <textarea rows="5" placeholder="Message"
+                        class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none resize-none focus:ring-2 focus:ring-purple-600"></textarea>
 
-                <a href="#" class="w-14 h-14 rounded-full bg-blue-700 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+                    <button
+                        class="form-item bg-purple-700 hover:bg-purple-800 text-white font-semibold px-12 py-4 rounded-lg transition">
+                        SUBMIT
+                    </button>
 
-                <a href="#"class="w-14 h-14 rounded-full bg-sky-700 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a href="#" class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white text-xl hover:scale-110 duration-300">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
+                </form>
 
             </div>
 
         </div>
 
-        <!-- Right Side -->
-        <div class="contact-form shadow-xl outline-1  fade-up  -outline-offset-1 outline-black/10   p-5 rounded-xl bg-white dark:bg-gray-700">
+        <!-- Branch Buttons -->
+        <div class="max-w-4xl mx-auto mt-20 flex flex-wrap justify-center gap-5">
 
-            <form class="space-y-7">
+            <button
+                class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
+                Kochi
+            </button>
 
-                <input type="text"
-                    placeholder="Enter your Full Name"
-                    class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
+            <button
+                class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
+                Thrissur
+            </button>
 
-                <input type="tel"
-                    placeholder="Enter your Phone Number"
-                    class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
+            <button
+                class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
+                Calicut
+            </button>
 
-                <input type="email"
-                    placeholder="Enter your Email ID"
-                    class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none focus:ring-2 focus:ring-purple-600">
-
-                <textarea rows="5"
-                    placeholder="Message"
-                    class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none resize-none focus:ring-2 focus:ring-purple-600"></textarea>
-
-                <button
-                    class="form-item bg-purple-700 hover:bg-purple-800 text-white font-semibold px-12 py-4 rounded-lg transition">
-                    SUBMIT
-                </button>
-
-            </form>
+            <button
+                class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
+                Trivandrum
+            </button>
 
         </div>
-
-    </div>
-
-    <!-- Branch Buttons -->
-    <div class="max-w-4xl mx-auto mt-20 flex flex-wrap justify-center gap-5">
-
-        <button
-            class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
-            Kochi
-        </button>
-
-        <button
-            class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
-            Thrissur
-        </button>
-
-        <button
-            class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
-            Calicut
-        </button>
-
-        <button
-            class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
-            Trivandrum
-        </button>
-
-    </div>
 
     <!-- Google Map -->
     <div class="max-w-7xl mx-auto mt-16 rounded-3xl overflow-hidden shadow-xl">
@@ -424,11 +437,11 @@
 
     </div>
 
-</section>
-        <!-- From Uiverse.io by gharsh11032000 -->
+    </section>
+    <!-- From Uiverse.io by gharsh11032000 -->
 
 
-        <!-- <div class="form-container">
+    <!-- <div class="form-container">
             <h1 class="text-3xl text-center">Connect us</h1>
             <form class="form">
                 <div class="form-group">
@@ -454,7 +467,7 @@
 
 
 
-        `
+    `
 
 
     </section>
@@ -715,15 +728,15 @@
 
     </section>
     <!-- faq -->
-    <section class="max-w-4xl mx-auto py-20 px-6" >
+    <section class="max-w-4xl mx-auto py-20 px-6">
 
 
         <div id="accordion-color" data-accordion="collapse"
-            class="rounded-base border border-purple-700 bg-black shadow-lg overflow-hidden shadow-xs">
+            class="rounded-base border border-purple-700 bg-white dark:bg-black  shadow-lg overflow-hidden shadow-xs">
 
             <h2 id="accordion-color-heading-1">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                     aria-controls="accordion-color-body-1">
 
@@ -740,7 +753,7 @@
 
             <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         We provide complete event management services, including weddings, corporate events, birthday
                         parties, engagements, baby showers, conferences, exhibitions, product launches, and private
@@ -751,7 +764,7 @@
             </div>
             <h2 id="accordion-color-heading-2">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-2" aria-expanded="false"
                     aria-controls="accordion-color-body-2">
 
@@ -768,7 +781,7 @@
 
             <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         We recommend booking at least 2–6 months in advance to secure your preferred date, venue, and
                         vendors. However, we also accommodate last-minute events based on availability.
@@ -778,7 +791,7 @@
             </div>
             <h2 id="accordion-color-heading-3">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-3" aria-expanded="false"
                     aria-controls="accordion-color-body-3">
 
@@ -795,7 +808,7 @@
 
             <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         Yes! Our packages are fully customizable. You can choose the services you need, such as venue
                         decoration, catering, photography, entertainment, transportation, and more.
@@ -805,7 +818,7 @@
             </div>
             <h2 id="accordion-color-heading-4">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-4" aria-expanded="false"
                     aria-controls="accordion-color-body-4">
 
@@ -822,7 +835,7 @@
 
             <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         Our event planning includes consultation, budgeting, venue selection, vendor coordination,
                         decoration, scheduling, guest management, entertainment, and complete event-day supervision.
@@ -832,7 +845,7 @@
             </div>
             <h2 id="accordion-color-heading-5">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-5" aria-expanded="false"
                     aria-controls="accordion-color-body-5">
 
@@ -849,7 +862,7 @@
 
             <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         Yes. We understand every event has a different budget, and we work closely with our clients to
                         create memorable experiences without exceeding their financial plan.
@@ -859,7 +872,7 @@
             </div>
             <h2 id="accordion-color-heading-6">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-200 border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
+                    class="flex items-center justify-between w-full p-5 font-semibold text-gray-900 dark:text-gray-200  border-t border-purple-700 hover:text-purple-400 hover:bg-purple-900/30 transition duration-300"
                     data-accordion-target="#accordion-color-body-6" aria-expanded="false"
                     aria-controls="accordion-color-body-6">
 
@@ -876,7 +889,7 @@
 
             <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
 
-                <div class="p-5 border-t border-purple-700 text-gray-400">
+                <div class="p-5 border-t border-purple-700 text-gray-600 dark:text-gray-300">
                     <p>
                         If you need to reschedule, we'll do our best to accommodate your new date based on availability.
                         Our team will also coordinate with vendors to minimize any inconvenience.
@@ -1021,12 +1034,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
-	<script>
-		const theme_toggle = document.getElementById("theme-toggle");
-		theme_toggle.addEventListener("click", () => {
-			document.documentElement.classList.toggle("dark")
-		})
-	</script>
+    <script>
+        const theme_toggle = document.getElementById("theme-toggle");
+        theme_toggle.addEventListener("click", () => {
+            document.documentElement.classList.toggle("dark")
+        })
+    </script>
     <script>
         AOS.init();
     </script>
