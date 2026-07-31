@@ -22,6 +22,13 @@
     <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+      <!-- gfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
 
     <!-- gsap -->
 
@@ -279,13 +286,13 @@
         <div class="">
 
             <!-- Logo -->
-            <!-- <a href="#" class="flex items-center space-x-3 py-2">
+            <a href="#" class="flex items-center space-x-3 py-2">
 					<span
 						class="font-[Dancing_Script] bg-violet-600 p-2 text-white rounded-lg  font-black ">LE</span>
 					<span class="self-center  font-semibold whitespace-nowrap text-gray-700 dark:text-gray-200">
 						Lumina Events
 					</span>
-				</a> -->
+				</a>
 
             <!-- Heading -->
             <h2 class="text-3xl font-bold mt-3 uppercase leading-tight mb-16">
@@ -375,7 +382,7 @@
                     class="form-item w-full border border-gray-300 rounded-lg px-6 py-4 outline-none resize-none focus:ring-2 focus:ring-purple-600"></textarea>
 
                 <button
-                    class="form-item bg-purple-700 hover:bg-purple-800 text-white font-semibold px-12 py-4 rounded-lg transition">
+                    class="ml-50 bg-purple-700 hover:bg-purple-800 text-white font-semibold px-12 py-4 rounded-lg transition">
                     SUBMIT
                 </button>
 
@@ -388,22 +395,22 @@
     <!-- Branch Buttons -->
     <div class="max-w-4xl mx-auto mt-20 flex flex-wrap justify-center gap-5">
 
-        <button
+        <button onclick="showMap('kochiMap')"
             class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
             Kochi
         </button>
 
-        <button
+        <button onclick="showMap('thrissurMap')"
             class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
             Thrissur
         </button>
 
-        <button
+        <button onclick="showMap('calicutMap')"
             class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
             Calicut
         </button>
 
-        <button
+        <button onclick="showMap('trivandrumMap')"
             class="px-12 py-4 rounded-full bg-gray-100 hover:bg-purple-700 hover:text-white transition hover:font-medium">
             Trivandrum
         </button>
@@ -413,14 +420,19 @@
     <!-- Google Map -->
     <div class="max-w-7xl mx-auto mt-16 rounded-3xl overflow-hidden shadow-xl">
 
-        <iframe
+        <iframe id="kochiMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502285.9782319154!2d75.7765125636937!3d10.412900740487688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0872b222b6b8cd%3A0x4221de1b77b495cd!2sDurbar%20Hall%20Ground!5e0!3m2!1sen!2sin!4v1785499894874!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map-frame"></iframe>
+        <iframe id="thrissurMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15696.428323680022!2d76.09587858715817!3d10.4130695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f30ccc3d6e2f%3A0x3a19188ec709379a!2sLuxeves!5e0!3m2!1sen!2sin!4v1785498775328!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map-frame hidden"></iframe>
+        <iframe id="calicutMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62609.333076240655!2d75.7150335486328!3d11.2552812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba659444f5a8ba1%3A0x2f2be80693984633!2sCITY%20EVENTS!5e0!3m2!1sen!2sin!4v1785500003494!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map-frame hidden"></iframe>
+        <iframe id="trivandrumMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126249.22535329511!2d76.7827575459368!3d8.568253570281566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05baa7b8892a65%3A0x5caf4c81c49c295f!2sThe%20EVENTZSOUL%20Event%20Management%20and%20Catering%20-%20Trivandrum%20No.1%20Trusted%20Brand!5e0!3m2!1sen!2sin!4v1785500053694!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map-frame hidden"></iframe>
+
+        <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!..."
             width="100%"
             height="500"
             style="border:0;"
             loading="lazy"
             allowfullscreen>
-        </iframe>
+        </iframe> -->
 
     </div>
 

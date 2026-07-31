@@ -77,7 +77,17 @@ gsap.from(".text-xl",{
     duration:1,
     ease:"power4.out",
     scrollTrigger:{
-        trigger:".text- xl",
+        trigger:".text-xl",
         start:"top 85%"
     }
 });
+
+function showMap(mapId) {
+
+    document.querySelectorAll(".map-frame").forEach(function(map) {
+        map.classList.add("hidden");
+    });
+
+    document.getElementById(mapId).classList.remove("hidden");
+
+}
