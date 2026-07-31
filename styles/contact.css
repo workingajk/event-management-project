@@ -119,9 +119,7 @@
     position:absolute;
     width:250px;
     height:250px;
-    background:#625bea;
-    filter:blur(120px );
-    opacity:.9;
+    
     border-radius:50%;
     z-index: 0;
 

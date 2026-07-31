@@ -1,13 +1,25 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".form-container",{
+gsap.from(".contact-form",{
     y:100,
     opacity:0,
-    duration:1,
+    duration:1.2,
     ease:"power3.out",
     scrollTrigger:{
-        trigger:".form-container",
+        trigger:".contact-form",
         start:"top 80%"
+    }
+});
+gsap.from(".form-item", {
+    y: 40,
+    opacity: 0,
+    stagger: 0.15,
+    duration: 0.7,
+    ease: "power2.out",
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: ".contact-form",
+        start: "top 80%"
     }
 });
 
@@ -46,6 +58,26 @@ gsap.from(".text-3xl",{
     ease:"power4.out",
     scrollTrigger:{
         trigger:".text-3xl",
+        start:"top 85%"
+    }
+});
+gsap.from(".text-2xl",{
+    y:80,
+    opacity:0,
+    duration:1,
+    ease:"power4.out",
+    scrollTrigger:{
+        trigger:".text-2xl",
+        start:"top 85%"
+    }
+});
+gsap.from(".text-xl",{
+    y:80,
+    opacity:0,
+    duration:1,
+    ease:"power4.out",
+    scrollTrigger:{
+        trigger:".text- xl",
         start:"top 85%"
     }
 });
