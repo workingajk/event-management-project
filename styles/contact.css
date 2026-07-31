@@ -154,3 +154,79 @@ main{
 }
 
 
+/* infinte scroll */
+.gallery {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* or 100vh */
+  overflow: hidden;
+}
+
+.cards {
+  position: absolute;
+  width: min(90vw, 34rem);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards li {
+  list-style: none;
+  width: 100%;
+  height: fit-content;
+  min-height: 0;
+  aspect-ratio: auto;
+  text-align: center;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.actions {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+}
+
+.actions button {
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #a78bfa;
+  border-radius: 0.5rem;
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.actions button:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgb(76 29 149 / 0.35);
+}
+
+.actions button:focus-visible {
+  outline: 3px solid #ddd6fe;
+  outline-offset: 3px;
+}
+
+.actions button:active {
+  transform: translateY(0);
+}
+.cards li img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
