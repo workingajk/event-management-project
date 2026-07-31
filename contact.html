@@ -10,15 +10,15 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./styles/contact.css">
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- flowbite -->
-
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- gsap -->
 
@@ -56,11 +56,14 @@
     <!-- CustomWiggle requires CustomEase -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
 
+    <style type="text/tailwindcss">
+		@custom-variant dark (&:where(.dark, .dark *));
+  	</style>
 
 
 </head>
 
-<body class="bg-black">
+<body class=" dark:bg-black ">
     <header class="bg-gray-100 sticky top-0 z-40">
 
 		<nav class="sticky w-full  top-0 border-b dark:border-gray-300 bg-white dark:bg-black shadow-sm">
@@ -862,7 +865,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
-
+	<script>
+		const theme_toggle = document.getElementById("theme-toggle");
+		theme_toggle.addEventListener("click", () => {
+			document.documentElement.classList.toggle("dark")
+		})
+	</script>
     <script>
         AOS.init();
     </script>
