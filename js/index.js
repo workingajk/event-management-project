@@ -163,11 +163,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
             ease: "sine.out",
             scrollTrigger: {
                 trigger: ".fade-up",
-                start: "top 60%",
+                start: "top 80%",
                 toggleActions: "play none none reset"
             }
         }
     );
+
+    // Counter stuff
+    document.querySelectorAll(".counter").forEach(counter => {
+
+    const obj = { value: 0 };
+
+    gsap.to(obj, {
+        value: counter.dataset.target,
+        duration: 2,
+        ease: "elastic.out",
+
+        scrollTrigger: {
+            trigger: counter,
+            start: "top 80%",
+            once: true
+        },
+
+        onUpdate() {
+            counter.textContent = Math.floor(obj.value).toLocaleString();
+        }
+    });
+
+});
 
     // other stuff to be added
 
