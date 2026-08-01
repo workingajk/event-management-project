@@ -5,64 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
 
 
 <div class="bg-white dark:bg-gray-950 rounded-xl shadow-xl px-8">
 
 
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-white dark:bg-gray-950">
-  <h1 class="text-center text-5xl font-bold text-violet-500 mb-8">create account</h1>
-  <h3 class="text-center text-violet-400 font-bold">create your account</h3>
+  <h1 class="text-center text-2xl font-bold text-violet-500 mb-4">Create Account</h1>
+  <h3 class="text-center text-violet-400 font-bold italic">Create Your Account</h3>
 
-  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-xl p-8">
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-xl bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow-xl p-8">
     <form action="#" method="POST" class="space-y-6">
 
 
  <div>
-        <label for="username" class="block text-sm/6 font-medium text-gray-900 dark:text-white">username</label>
+        <label for="username" class="block text-sm/6 font-medium text-gray-900 dark:text-white mt-5">Username</label>
         <div class="mt-4">
-          <input id="username" type="text" name="username" required autocomplete="username" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          <input id="username" type="text" name="username" required autocomplete="username" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-3 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
         </div>
 
       <div>
-        <label for="email" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Email address</label>
+        <label for="email" class="block text-sm/6 font-medium text-gray-900 dark:text-white mt-5 ">Email address</label>
         <div class="mt-5">
-          <input id="email" type="email" name="email" required autocomplete="email" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          <input id="email" type="email" name="email" required autocomplete="email" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-3 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
         </div>
       </div>
 
       <div>
         <div class="flex items-center justify-between">
-          <label for="password" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Password</label>
+          <label for="password" class="block text-sm/6 font-medium text-gray-900 dark:text-white mt-5">Password</label>
         </div>
         <div class="mt-4">
-          <input id="password" type="password" name="password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          <input id="password" type="password" name="password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-3 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
         </div>
       </div>
 
     <div>
         <div class="flex items-center justify-between">
-          <label for="confirm-password" class="block text-sm/6 font-medium text-gray-900 dark:text-white"> confirm Password</label>
+          <label for="confirm-password" class="block text-sm/6 font-medium text-gray-900 dark:text-white mt-5"> Confirm Password</label>
         </div>
         <div class="mt-4">
-          <input id="confirm-password" type="password" name="confirm-password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-1.5 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          <input id="confirm-password" type="password" name="confirm-password" required autocomplete="new-password" class="block w-full rounded-xl bg-violet-300 dark:bg-violet-950 px-3 py-3 text-base text-gray-900 dark:text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
         </div>
       </div>
       <div class="mt-8">
-        <button type="submit" class="flex w-full justify-center rounded-xl bg-violet-500 dark:bg-violet-950 px-3 py-1.5 text-sm/6 font-semibold text-gray-900 dark:text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">register</button>
+        <button type="submit" class="flex w-full justify-center rounded-xl bg-violet-600 px-2.5 py-3 text-sm/6 font-semibold text-white hover:bg-violet-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500">Register</button>
       </div>
-      <p class="text-center mt-7 text-sm text-violet-600 dark:text-violet-300">already have an account?
-      <a href="login.html" class="text-center text-violet-600 dark:text-violet-400 hover:underline">login here</a>
+
+<div class="flex items-center gap-4 my-8 items-center justify-center">
+  <hr class="flex-1 border-gray-300 dark:border-gray-500">
+  <span class=" dark:text-gray-400 dark:text-gray-400">OR</span>
+<hr class="flex-1 border-gray-300 dark:border-gray-600">
+</div>
+
+<div class="flex justify-center mt-5 gap-6 ">
+<button type="button">
+<i class="fa-brands fa-google text-3xl text-violet-500 hover:text-violet-400"></i>
+</button>
+
+<button type="button">
+<i class="fa-brands fa-apple text-3xl text-violet-500 hover:text-violet-400"></i>
+
+</button>
+
+<button type="button">
+<i class="fa-brands fa-facebook text-3xl text-violet-500 hover:text-violet-400"></i>
+</button>
+</div>
+      <p class="text-center mt-7 text-sm text-violet-600 dark:text-violet-300">Already Have an Account?
+      <a href="login.html" class="text-center text-violet-600 dark:text-violet-400 hover:underline">Login here</a>
      </p>
+   <div class="mt-10 border border-gray-200 dark:border-gray-500 bg-white dark:bg-gray-900 rounded-lg p-4 text-center">
+<p class="text-sm text-violet-500 dark:text:text-violet-400 mb-4">Need help?</p>
+<a href="#"class="text-violet-600 dark:text-violet-400 pt-4"><i class="fa-solid fa-phone" style="color: rgb(116, 192, 252);"></i>9876543210</a>
+<p class="mt-4 text-sm text-violet-500 dark:text-violet-400">
+  <i class="fa-solid fa-envelope" style="color: rgb(116, 192, 252);"></i>
+  lumina@gmail.com
+</p>
+</div>
+
+
+
     </form>
   </div>
 </div>
 
 </div>
-    
 
+    
 
 </body>
 </html>
