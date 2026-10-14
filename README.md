@@ -52,22 +52,6 @@ event-management-project/
 └── img/
 ```
 
-## Getting Started
-
-Because this is a static frontend project, no build step is required.
-
-1. Clone the repository.
-2. Open the project folder.
-3. Launch `index.html` in your browser.
-
-For the best experience, use a local server (so asset paths and browser policies behave consistently), for example:
-
-```bash
-python -m http.server 5500
-```
-
-Then open `http://localhost:5500/index.html`.
-
 ## Customization Guide
 
 - Update page content directly in the corresponding `.html` files.
