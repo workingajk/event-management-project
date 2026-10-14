@@ -1,5 +1,7 @@
 # Event Management Project
 
+[Live Demo](https://workingajk.github.io/event-management-project/)
+
 A responsive multi-page event management website built with HTML, CSS, and JavaScript.  
 It showcases services, pricing, booking, contact details, and user auth-style pages with rich animations and interactive UI components.
 
